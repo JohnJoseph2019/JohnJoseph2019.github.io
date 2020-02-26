@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Zhi+Mang+Xing" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Juan's About</title>
+</head>
+
+<body>
+    <header>
+    <h1>About Me</h1>
+    <ul>
+        <li><a href="index.html">Main</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    </header>
+    <article>
+        <h2>Childhood</h2>
+        <img class="about" id="childhood" src="photos/harlem_2.jpg" alt="Ecuador Otavalo" onclick="change1();">
+        <p class="about"> I was born in the city the never sleeps ,NYC. I came to this world around 2pm in one April 17 ,1989. My child was a crazy one since I was always doing something like sports, afterschool  and getting into trouble. (click the picture)  </p>
+    </article>
+    <article>
+        <h2>Family</h2>
+        <img class="about" id="family" src="photos/family_1.jpg" alt="Ecuador Otavalo" onclick="change2();">
+        <p class="about">When it comes to family I would like to say I'm blessed in having a big one. I am the eldest of 2 but I have one more brother, (brother from another mother) who practically was our own since we grew up together.Now I know I said I do have a big family which I do i have 8 aunts/uncles from my mom and 5 aunts/uncles from my dad side. Yup, you can imagine loads of cousins. <br> (click the picture)</p>
+    </article>
+    <article>
+        <h2>Hobbies</h2>
+        <img class="about" id="hobbies" src="photos/hobbie_1.jpg" alt="Ecuador Otavalo" onclick="change3();">
+        <p class="about">Most of my hobbies are mainly outdoors type hobbie. I like to run , hike, swing, bike, camping etc etc. (click the picture)</p>
+    </article>
+
+</body>
+<script>
+function change1()
+{
+    var imgElement = document.getElementById('childhood').getAttribute("src");
+    if(imgElement === 'photos/harlem_2.jpg')
+    {
+        document.getElementById("childhood").src = "photos/harlem_1.jpg";
+    }
+    else{
+
+        document.getElementById("childhood").src = "photos/harlem_2.jpg";
+    }
+
+}
+
+function change2() {
+    var imgElement = document.getElementById('family').getAttribute("src");
+    if (imgElement === 'photos/family_1.jpg') {
+        document.getElementById("family").src = "photos/family_2.jpg";
+    }
+    else {
+        document.getElementById("family").src = "photos/family_1.jpg";
+    }
+
+    }
+
+function change3() {
+    var imgElement = document.getElementById('hobbies').getAttribute("src");
+    if (imgElement === 'photos/hobbie_1.jpg') {
+        document.getElementById("hobbies").src = "photos/hobbie_2.jpg";
+    }
+    else {
+        document.getElementById("hobbies").src = "photos/hobbie_1.jpg";
+    }
+}    
+</script>
+
+</html>

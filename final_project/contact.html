@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Zhi+Mang+Xing" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact's Page</title>
+</head>
+
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <ul>
+            <li><a href="index.html">Main</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="project.html">Projects</a></li>
+        </ul>
+    </header>
+   <div id="contact">
+        <form>
+            <label for="fname">Name</label>
+            <input type="text" name="firstname" placeholder="First Name">
+            <input type="text" name="lastname" placeholder="Last Name">
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="example@xxx.com">
+            <label for="number">Phone Number</label>
+            <input type="number" placeholder="(212)222-3333">
+            <input type="submit" value="Submit" onclick=alertme(); >
+
+        </form>
+    </div>
+    <div id="footer">
+    <footer>
+        <hr>
+        Written by <a href="mailto:delgado-juan@hotmail.com">Juan Delgado</a>.<br>
+        Visit us at: <a href="www.generalassembly.com">General Assembly</a> <br>
+        New York , New York<br>
+        USA
+    </footer>
+    </div>
+
+
+</body>
+<script>
+function alertme(){
+    alert("Your submission was entered")
+}
+</script>
+
+</html>
